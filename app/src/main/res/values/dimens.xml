@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <dimen name="optionButton_width">300dp</dimen>
+    <dimen name="optionButton_height">60dp</dimen>
+    <dimen name="next_previous_Button_width">125dp</dimen>
+    <dimen name="next_previous_Button_height">50dp</dimen>
+</resources>

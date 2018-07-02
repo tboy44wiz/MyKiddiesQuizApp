@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".45"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kid_studying" />
+
+        <TextView
+            android:id="@+id/question_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/question"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/questionNumber_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/question_number"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/question_total"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/optionA_Button"
+                    android:layout_width="@dimen/optionButton_width"
+                    android:layout_height="@dimen/optionButton_height"
+                    android:text="@string/option_a"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+                <Button
+                    android:id="@+id/optionB_Button"
+                    android:layout_width="@dimen/optionButton_width"
+                    android:layout_height="@dimen/optionButton_height"
+                    android:text="@string/option_b"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+                <Button
+                    android:id="@+id/optionC_Button"
+                    android:layout_width="@dimen/optionButton_width"
+                    android:layout_height="@dimen/optionButton_height"
+                    android:text="@string/option_b"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+                <Button
+                    android:id="@+id/optionD_Button"
+                    android:layout_width="@dimen/optionButton_width"
+                    android:layout_height="@dimen/optionButton_height"
+                    android:text="@string/option_b"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="5dp">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/previous_Button"-->
+                <!--android:layout_width="@dimen/next_previous_Button_width"-->
+                <!--android:layout_height="@dimen/next_previous_Button_height"-->
+                <!--android:text="@string/previous"-->
+                <!--android:textSize="12sp" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/next_Button"-->
+                <!--android:layout_width="@dimen/next_previous_Button_width"-->
+                <!--android:layout_height="@dimen/next_previous_Button_height"-->
+                <!--android:text="@string/next"-->
+                <!--android:textSize="12sp" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+
+</LinearLayout>
